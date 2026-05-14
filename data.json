@@ -1,0 +1,75 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "text": "Urgent! Forward this message to 10 friends or bad luck will follow!",
+      "score": 85,
+      "language": "English",
+      "isScreenshot": false,
+      "votes": {
+        "fake": 12,
+        "real": 3
+      },
+      "forwardRisk": "HIGH",
+      "viralSpread": "If shared, could reach 500+ people in 24 hours via WhatsApp chains."
+    },
+    {
+      "id": 2,
+      "text": "\u00e0\u00a4\u00af\u00e0\u00a4\u00b9 \u00e0\u00a4\u00b8\u00e0\u00a4\u201a\u00e0\u00a4\u00a6\u00e0\u00a5\u2021\u00e0\u00a4\u00b6 \u00e0\u00a4\u2020\u00e0\u00a4\u2014\u00e0\u00a5\u2021 \u00e0\u00a4\u00ad\u00e0\u00a5\u2021\u00e0\u00a4\u0153\u00e0\u00a5\u2021\u00e0\u00a4\u201a! (Forward this message!)",
+      "score": 78,
+      "language": "Hindi",
+      "isScreenshot": true,
+      "votes": {
+        "fake": 8,
+        "real": 5
+      },
+      "forwardRisk": "MEDIUM",
+      "viralSpread": "Potential spread to local groups, reaching 200+ users."
+    },
+    {
+      "id": 3,
+      "text": "Breaking news: Major event happening now!",
+      "score": 92,
+      "language": "English",
+      "isScreenshot": false,
+      "votes": {
+        "fake": 15,
+        "real": 1
+      },
+      "forwardRisk": "HIGH",
+      "viralSpread": "High viral potential, could spread exponentially."
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "password",
+      "role": "admin",
+      "email": "admin@fastverify.com",
+      "address": "123 Admin Street, City, Country",
+      "dateOfBirth": "1990-01-01",
+      "qualification": "Job Holder - Software Engineer"
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password": "user123",
+      "role": "user",
+      "email": "user@example.com",
+      "address": "456 User Avenue, Town, Country",
+      "dateOfBirth": "1995-05-15",
+      "qualification": "Student - Computer Science"
+    },
+    {
+      "id": 3,
+      "username": "Amulya",
+      "password": "123",
+      "role": "user",
+      "email": "challaamulya92@gmail.com",
+      "address": "nrt",
+      "dateOfBirth": "2027-06-12",
+      "qualification": "Student"
+    }
+  ]
+}

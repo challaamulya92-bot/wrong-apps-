@@ -1,0 +1,6 @@
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="25" cy="25" r="15" fill="none" stroke="#f97316" stroke-width="3"/>
+  <line x1="35" y1="35" x2="45" y2="45" stroke="#f97316" stroke-width="3" stroke-linecap="round"/>
+  <text x="10" y="50" font-size="8" fill="#ea580c">Why?</text>
+  <text x="10" y="58" font-size="8" fill="#ea580c">Details</text>
+</svg>

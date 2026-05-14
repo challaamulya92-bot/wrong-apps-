@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fast Verify | App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <nav class="site-nav">
+      <a class="brand" href="index.html">Fast Verify</a>
+      <div class="nav-actions">
+        <a class="button secondary" href="index.html">Home</a>
+        <a class="button secondary" href="about.html">About</a>
+        <a class="button secondary" href="features.html">Features</a>
+        <a class="button secondary" href="demo.html">Demo</a>
+        <a class="button secondary" href="team.html">Team</a>
+        <a class="button secondary" href="contact.html">Contact</a>
+        <a class="button secondary" href="login.html">Login</a>
+        <a class="button secondary" href="dashboard.html">Dashboard</a>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <div>
+        <span class="badge">Live demo</span>
+        <h1>Verify forwarded messages before you share.</h1>
+      </div>
+      <p>Instant truth scoring, screenshot detection, regional language support, and community trust all in one simple app.</p>
+    </header>
+
+    <main>
+      <section class="card input-card">
+        <label for="inputText">Paste message, link, or screenshot text</label>
+        <textarea id="inputText" rows="6" placeholder="WhatsApp message, news link, image caption, or screenshot text..."></textarea>
+
+        <div class="input-settings">
+          <label>
+            Language
+            <select id="languageSelect">
+              <option value="english">English</option>
+              <option value="hindi">Hindi</option>
+              <option value="gujarati">Gujarati</option>
+            </select>
+          </label>
+
+          <label class="upload-panel">
+            Upload screenshot
+            <input id="imageUpload" type="file" accept="image/*" />
+            <span class="upload-hint">Optional: choose a screenshot or forwarded message image.</span>
+          </label>
+        </div>
+
+        <div class="image-preview hidden" id="imagePreviewContainer">
+          <img id="imagePreview" alt="Screenshot preview" />
+          <p id="screenshotStatus">Screenshot uploaded. Detecting forwarded message patterns.</p>
+        </div>
+
+        <div class="chat-preview hidden" id="chatPreview">
+          <p class="forward-tag">Forwarded many times ⚠️</p>
+          <div class="chat-bubble">
+            <p id="previewText"></p>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="verifyButton" class="primary">Verify</button>
+          <button id="clearButton" class="secondary">Clear</button>
+        </div>
+      </section>
+
+      <section class="card result-card hidden" id="resultCard">
+        <div class="result-header">
+          <div>
+            <p class="status-label" id="statusLabel">Status</p>
+            <h2 id="scoreLabel">Truth Score: 0%</h2>
+          </div>
+          <span class="result-badge" id="resultBadge">Unknown</span>
+        </div>
+        <p class="forward-risk hidden" id="forwardRiskLabel"></p>
+        <div class="viral-controls">
+          <button id="viralButton" class="secondary">If you forward this...</button>
+          <p class="viral-spread hidden" id="viralSpreadText"></p>
+        </div>
+        <p class="warning-text hidden" id="warningText"></p>
+        <p class="result-meta" id="trustScore"></p>
+
+        <div class="result-grid">
+          <div>
+            <p class="section-title">Why this result</p>
+            <ul class="explanation-list" id="explanationText"></ul>
+          </div>
+          <div>
+            <p class="section-title">Trusted sources</p>
+            <ul id="trustedSources"></ul>
+          </div>
+        </div>
+
+        <div class="vote-panel">
+          <p>Community vote</p>
+          <div class="vote-buttons">
+            <button data-vote="real" class="vote-button">Real</button>
+            <button data-vote="fake" class="vote-button">Fake</button>
+          </div>
+          <div class="vote-counts">
+            <span id="realCount">0</span> Real · <span id="fakeCount">0</span> Fake
+          </div>
+        </div>
+      </section>
+
+      <section class="card notes-card">
+        <p class="section-title">Why this helps</p>
+        <ul>
+          <li>Instant truth score makes decisions fast and visual.</li>
+          <li>Screenshot / WhatsApp forward detection flags common chain messages.</li>
+          <li>Supports English, Hindi, and Gujarati inputs.</li>
+          <li>Community trust score adds reliability over time.</li>
+        </ul>
+        <p class="tip">Tip: Try a message with “Forward this” or “Urgent!!!” to see the warning message.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
